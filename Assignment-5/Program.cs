@@ -24,16 +24,24 @@ namespace Assignment_5
             Random r = new Random();
 
             ListQ = new ArrayList();
+           
             for(int i = 0; i < LEN; i++)
             {
                 ListQ.Add(r.Next(100));
                 this.findTwoNumbersThatAddUpTo(AddUptoNumber);
             }
-            Console.WriteLine(AddUptoNumber);
+            foreach(int i in ListQ)
+            {
+                Console.WriteLine(i);
+            }
+            
         }
         public void findTwoNumbersThatAddUpTo(int a)
         {
-            
+
+            int num1 = a;
+            int num2 = a;
+            if(num)
         }
     }
 }
