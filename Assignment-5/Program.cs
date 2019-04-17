@@ -29,6 +29,11 @@ namespace Assignment_5
                 ListQ.Add(r.Next(100));
                 this.findTwoNumbersThatAddUpTo(AddUptoNumber);
             }
+            Console.WriteLine(AddUptoNumber);
+        }
+        public void findTwoNumbersThatAddUpTo(int a)
+        {
+            
         }
     }
 }
