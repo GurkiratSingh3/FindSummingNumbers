@@ -31,20 +31,25 @@ namespace Assignment_5
             {
                 ListQ.Add(r.Next(100));
                 this.findTwoNumbersThatAddUpTo(AddUptoNumber);
+                break;
             }
         }
         public void findTwoNumbersThatAddUpTo(int a)
         {
             Random r = new Random();
+            
             ListQ = new ArrayList();
-            int num1 = 0;
-            int num2 = 0;
+            int n1 = 0;
+            int n2 = 0;
             for (int i = 0; i < LEN; i++)
             {
-                ListQ.Add(r.Next(100));
-                if(num1+num2==a)
+                int num1 = ListQ.Add(r.Next(100));
+                int num2 = ListQ.Add(r.Next(100));
+                if (num1+num2==a)
                 {
-                    Console.WriteLine()
+                    n1 = num1;
+                    n2 = num2;
+                    Console.WriteLine(n1 + " "  + n2);
                 }
             }
         }
