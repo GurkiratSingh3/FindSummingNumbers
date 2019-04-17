@@ -18,6 +18,7 @@ namespace Assignment_5
     class GenerateList
     {
         const int LEN = 100;
+
         ArrayList ListQ;
 
         public void Run(int AddUptoNumber)
@@ -25,7 +26,7 @@ namespace Assignment_5
             Random r = new Random();
 
             ListQ = new ArrayList();
-           
+
             for(int i = 0; i < LEN; i++)
             {
                 ListQ.Add(r.Next(100));
@@ -34,7 +35,18 @@ namespace Assignment_5
         }
         public void findTwoNumbersThatAddUpTo(int a)
         {
-            
+            Random r = new Random();
+            ListQ = new ArrayList();
+            int num1 = 0;
+            int num2 = 0;
+            for (int i = 0; i < LEN; i++)
+            {
+                ListQ.Add(r.Next(100));
+                if(num1+num2==a)
+                {
+                    Console.WriteLine()
+                }
+            }
         }
     }
 }
