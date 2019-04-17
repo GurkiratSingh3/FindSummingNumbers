@@ -49,7 +49,7 @@ namespace Assignment_5
                 {
                     n1 = num1;
                     n2 = num2;
-                    Console.WriteLine(n1 + " "  + n2);
+                    Console.WriteLine($"The two numbers are {n1} and {n2}.");
                 }
             }
         }
