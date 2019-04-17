@@ -18,6 +18,17 @@ namespace Assignment_5
     {
         const int LEN = 100;
         ArrayList ListQ;
-        public
+
+        public void Run(int AddUptoNumber)
+        {
+            Random r = new Random();
+
+            ListQ = new ArrayList();
+            for(int i = 0; i < LEN; i++)
+            {
+                ListQ.Add(r.Next(100));
+                this.findTwoNumbersThatAddUpTo(AddUptoNumber);
+            }
+        }
     }
 }
