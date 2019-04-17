@@ -30,18 +30,16 @@ namespace Assignment_5
                 ListQ.Add(r.Next(100));
                 this.findTwoNumbersThatAddUpTo(AddUptoNumber);
             }
-            foreach(int i in ListQ)
-            {
-                Console.WriteLine(i);
-            }
             
         }
         public void findTwoNumbersThatAddUpTo(int a)
         {
-
-            int num1 = a;
-            int num2 = a;
-            if(num)
+            Random rn = new Random();
+            ListQ = new ArrayList();
+            foreach (int i in ListQ)
+            {
+                Console.WriteLine(i);
+            }
         }
     }
 }
