@@ -11,7 +11,8 @@ namespace Assignment_5
     {
         static void Main(string[] args)
         {
-            new GenerateList().Run(57);
+            GenerateList a = new GenerateList();
+            a.Run(57);
         }
     }
     class GenerateList
@@ -30,16 +31,10 @@ namespace Assignment_5
                 ListQ.Add(r.Next(100));
                 this.findTwoNumbersThatAddUpTo(AddUptoNumber);
             }
-            
         }
         public void findTwoNumbersThatAddUpTo(int a)
         {
-            Random rn = new Random();
-            ListQ = new ArrayList();
-            foreach (int i in ListQ)
-            {
-                Console.WriteLine(i);
-            }
+            
         }
     }
 }
